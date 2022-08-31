@@ -1,0 +1,13 @@
+version: '3.7'
+
+services: 
+  web:
+    image: httpd:latest
+    container_name: apache-app
+    ports:
+      - "80:80"
+    volumes:
+      -  /home/caio-/docker/data/apache/:/usr/local/apache2/htdocs
+    
+  
+
